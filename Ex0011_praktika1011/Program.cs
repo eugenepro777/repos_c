@@ -1,6 +1,5 @@
 ﻿// Задача про двух друзей и собаку
-static void Main()
-{
+
     double count = 0;
     double distance = 10000;
     double firstFriendSpeed = 1;
@@ -8,7 +7,7 @@ static void Main()
     double dogSpeed = 5;
     double friend = 2;
     double time = 0;
-}
+
 while(distance > 10)
 {
     if(friend == 1)
@@ -27,5 +26,3 @@ while(distance > 10)
     }
 }
 Console.WriteLine($"Собака пробежит: {count} раз");
-  }
-}
