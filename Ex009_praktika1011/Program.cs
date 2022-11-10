@@ -1,7 +1,7 @@
 ﻿// Даны два действительных числа x и у. Вычислить их сумму, разность, произведение и частное 
 
-double x = new Random.NextDouble(); // от 0 до 1
-double y = new Random.NextDouble();
+double x = new Random().NextDouble(); // от 0 до 1
+double y = new Random().NextDouble();
 
 Console.WriteLine("Вычисляем данные числа: ");
 Console.WriteLine(x);
