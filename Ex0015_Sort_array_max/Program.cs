@@ -1,8 +1,9 @@
 ﻿//Упорядочить массив от максимального к минимальному
 
-int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
+int[] arr = {1, 51, 4, 3, 9, 6, 7, 1, 1};
 
-void PrintArray(int[] array)
+void PrintArray(int[] array) //функция обрабатывает печать
+//  исходного массива в заданном изначально порядке
 {
     int count = array.Length;
 
@@ -13,7 +14,8 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-void SelectionSort(int[] array)
+void SelectionSort(int[] array)// функция ищет максимальное число
+//  и сортирует от max к min
 {
     for (int i = 0; i < array.Length - 1; i++)
     {
@@ -28,6 +30,6 @@ void SelectionSort(int[] array)
     }
 }
 
-PrintArray(arr);
-SelectionSort(arr);
-PrintArray(arr);
+PrintArray(arr); // выводим исходный массив
+SelectionSort(arr); // вызываем функцию сортировки массива
+PrintArray(arr); // выводим отсортированный массив
