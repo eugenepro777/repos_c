@@ -1,5 +1,7 @@
 ﻿// создание методов заполнения массива и его печати плюс поиск элемента
-void FillArray(int[] collection)
+
+void FillArray(int[] collection) //функция заполнения массива
+// случайными элементами(числами)
 {
     int length = collection.Length;
     int index = 0;
@@ -10,7 +12,7 @@ void FillArray(int[] collection)
     }
 }
 
-void PrintArray(int[] col)
+void PrintArray(int[] col) //функция печати массива
 {
     int count = col.Length;
     int position = 0;
@@ -21,7 +23,7 @@ void PrintArray(int[] col)
     }
 }
 
-int IndexOf(int[] collection, int find)
+int IndexOf(int[] collection, int find)//функция поиска индекса массива
 {
     int count = collection.Length;
     int index = 0;
@@ -40,9 +42,9 @@ int IndexOf(int[] collection, int find)
 }
 int[] array = new int[10];
 
-FillArray(array);
+FillArray(array); // заполнили массив случайными элементами(числами)
 PrintArray(array);
 Console.WriteLine();
 
-int pos = IndexOf(array, 5);
+int pos = IndexOf(array, 5); //переменная для вывода из функции индекса
 Console.WriteLine(pos);

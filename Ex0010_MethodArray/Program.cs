@@ -14,5 +14,5 @@ while (index < n)
         Console.WriteLine(index);
         break;
     }
-    index++;
+    index++; // каждый раз увеличиваем index на 1
 }
