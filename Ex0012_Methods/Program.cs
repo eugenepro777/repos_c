@@ -21,7 +21,7 @@ void Method21(string msg, int count)
     while (i < count)
     {
         Console.WriteLine(msg);
-        i++;
+        i++; 
     }
 }
 // Method21("Текст ???", 4);

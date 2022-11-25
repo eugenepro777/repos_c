@@ -1,6 +1,6 @@
 ﻿//Дан текст. В тексте нужно все пробелы заменить
 //чёрточками, маленькие буквы "к" заменить большими 
-//буквами "К", а большие "С" заменить маленькими "с"
+//буквами "К", а большие "В" заменить маленькими "в"
 
 string text = "- Я думаю, - сказал князь, улыбаясь, - что,"
             + "ежели бы вас послали вместо нашего милого Винцегороде,"
@@ -18,7 +18,7 @@ string Replace(string text, char oldValue, char newValue)
 
     for (int i = 0; i < length; i++)
     {
-        if (text[i] == oldValue) result = result + $"{newValue}";
+        if (text[i] == oldValue) result += $"{newValue}";
         else result = result + $"{text[i]}";
     }
 
@@ -31,5 +31,5 @@ Console.WriteLine();
 newText = Replace(newText, 'к', 'К');
 Console.WriteLine(newText);
 Console.WriteLine();
-newText = Replace(newText, 'С', 'с');
+newText = Replace(newText, 'В', 'в');
 Console.WriteLine(newText);
