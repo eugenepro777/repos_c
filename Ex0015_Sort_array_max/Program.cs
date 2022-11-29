@@ -30,6 +30,6 @@ void SelectionSort(int[] array)// функция ищет максимально
     }
 }
 
-PrintArray(arr); // выводим исходный массив
-SelectionSort(arr); // вызываем функцию сортировки массива
-PrintArray(arr); // выводим отсортированный массив
+PrintArray(arr); //выводим исходный массив
+SelectionSort(arr); //вызываем функцию сортировки массива
+PrintArray(arr); //выводим отсортированный массив
